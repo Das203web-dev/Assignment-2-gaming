@@ -300,7 +300,7 @@ main {
     position: relative;
 }
 
-.card-container .card img {
+.card-container .card .card-content img {
     width: 100%;
 }
 
@@ -325,8 +325,8 @@ main {
     text-align: center;
 }
 
-.card-container>.card:hover .image-overlay {
-    opacity: 0.6;
+.card-container>.card:hover .card-content>.image-overlay {
+    opacity: 0.8;
 }
 
 .card-container .card .card-description {
