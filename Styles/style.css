@@ -292,8 +292,37 @@ main {
     margin-bottom: 120px;
 }
 
+.card-container .card .card-content {
+    position: relative;
+}
+
 .card-container .card img {
     width: 100%;
+}
+
+.card-container>.card>.card-content>.image-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background-color: #0B0223;
+    cursor: pointer;
+}
+
+.card-container>.card>.card-content>.image-overlay>.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.card-container>.card:hover .image-overlay {
+    opacity: 0.6;
 }
 
 .card-container .card .card-description {
@@ -441,7 +470,7 @@ footer {
     align-items: center;
     /* gap: 30px; */
     justify-content: center;
-    margin-bottom: 66px;
+    margin-bottom: 30px;
     width: 100%;
     /* padding:  ; */
 
@@ -466,7 +495,7 @@ footer {
     justify-content: center;
     align-items: center;
     /* gap: 40px; */
-    margin-bottom: 66px;
+    margin-bottom: 30px;
     /* width: 100%; */
 
 }
@@ -482,7 +511,7 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     align-items: center;
-    margin-bottom: 66px;
+    margin-bottom: 30px;
     /* gap: 60px; */
     /* width: 100%; */
 
