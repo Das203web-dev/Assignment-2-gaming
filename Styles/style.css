@@ -61,6 +61,10 @@ nav>ul>li {
 
 nav>ul>li>a {
     text-decoration: none;
+    color: #3C354F;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 nav>ul>button {
