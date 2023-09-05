@@ -5,7 +5,7 @@
 }
 
 body {
-    margin: 0 240px;
+    margin: 0 150px;
     font-size: 16px;
 
 }
@@ -181,6 +181,7 @@ nav>ul>button>a>.fa-tiktok {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 120px;
 }
 
 .gamer-section-image img {
@@ -192,28 +193,12 @@ nav>ul>button>a>.fa-tiktok {
     text-align: right;
 }
 
-.gamer-section-description button {
-    display: inline-flex;
-    padding: 21px 40px;
-    /* align-items: flex-start; */
-    gap: 10px;
-    border-radius: 48px;
-    background: linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%);
-    color: #FFF;
-    font-size: 1.25rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    white-space: nowrap;
-    border: none;
-}
+
 
 .gamer-section-title {
     text-align: right;
-    font-family: Work Sans;
     font-size: 48px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -224,17 +209,204 @@ nav>ul>button>a>.fa-tiktok {
 .gamer-section-para {
     color: #534C64;
     text-align: right;
-    font-family: Work Sans;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
     line-height: 30px;
     margin-bottom: 32px;
+}
 
-    /* 166.667% */
+.gamer-section-description button {
+    display: inline-flex;
+    padding: 21px 40px;
+    gap: 10px;
+    border-radius: 48px;
+    background: linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%);
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    white-space: nowrap;
+    border: none;
+    margin-bottom: 60px;
+}
+
+.gamer-section-description .purpose {
+    color: #534C64;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 45px;
+}
+
+.gamer-section-description blockquote {
+    color: #534C64;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 45px;
+    width: 100%;
+    white-space: nowrap;
 }
 
 /* gamer section style end  */
+
+
+/* online game section start  */
+.online-game-section {
+    text-align: center;
+}
+
+.online-game-section-title {
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.online-game-section-title>span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.online-game-section-description {
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 48px;
+}
+
+/* card style  */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-bottom: 120px;
+}
+
+.card-container .card img {
+    width: 100%;
+}
+
+.card-container .card .card-description {
+    text-align: left;
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+/* online game section end  */
+
+
+/* service section style start  */
+.service-section {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    gap: 150px;
+    margin-bottom: 120px;
+}
+
+.service-section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 24px;
+}
+
+.service-section-title span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.service-section-description {
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.service-section-image-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.service-section-image-div img {
+    width: 100%;
+}
+
+.relative-image-div {
+    width: 50%;
+    position: absolute;
+    bottom: -100px;
+    left: 15%;
+    transform: translate(-50%);
+
+}
+
+.relative-image-div img {
+    width: 100%;
+    position: relative;
+    bottom: 50px;
+    left: -50px;
+    /* transform: translate(-50%); */
+}
+
+/* service section style end  */
+
+
+/* rounded card section style start  */
+.rounded-cards-section {
+    display: flex;
+    /* width: 100%; */
+    width: calc(100% - 8px / 9);
+
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.rounded-card-content {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    padding: 2px;
+}
+
+.rounded-card-content:hover {
+    border-radius: 50px;
+    border: 1px solid #FF42A5;
+    background: linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.rounded-card-content img {
+    width: 60px;
+}
+
+.rounded-card-title {
+    color: #0B0223;
+    font-size: 18px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+
+/* rounded card section style end  */
 
 /* main section style end  */
 
@@ -296,7 +468,7 @@ nav>ul>button>a>.fa-tiktok {
     }
 
     .we-are-gamer-section {
-        flex-direction: column-reverse;
+        flex-direction: column;
         gap: 100px;
         margin-bottom: 100px;
     }
@@ -316,16 +488,77 @@ nav>ul>button>a>.fa-tiktok {
         text-align: center;
     }
 
-    /* button {
-        text-align: center;
+    .gamer-section-description blockquote {
+        width: 100%;
+        white-space: normal;
+    }
 
-    } */
+    .online-game-section-title {
+        font-size: 2rem;
+    }
+
+    .online-game-section-title span {
+        font-size: 2rem;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .service-section {
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .service-section-image-div {
+        width: 100%;
+        align-items: flex-end;
+    }
+
+    .service-section-image-div img {
+        width: 80%;
+    }
+
+    .relative-image-div {
+        bottom: -50px;
+        left: 70px;
+        width: 50%;
+
+    }
+
+    .relative-image-div img {
+        position: static;
+    }
+
+    .rounded-cards-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        /* width: calc(100% - 8px); */
+
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rounded-card-content {
+        width: 100%;
+    }
+
+    .rounded-card-title {
+        white-space: normal;
+        font-size: 10px;
+    }
+
+    .rounded-card-content img {
+        width: 30px;
+    }
 }
 
 /* responsive design for tablet  */
 @media screen and (min-width:576px) and (max-width:768px) {
     body {
-        margin: 0;
+        margin: 20px;
     }
 
     nav {
@@ -350,7 +583,7 @@ nav>ul>button>a>.fa-tiktok {
     }
 
     .we-are-gamer-section {
-        flex-direction: column-reverse;
+        flex-direction: column;
         gap: 100px;
         margin-bottom: 100px;
     }
@@ -368,5 +601,9 @@ nav>ul>button>a>.fa-tiktok {
 
     .gamer-section-para {
         text-align: center;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
