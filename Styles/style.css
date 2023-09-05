@@ -5,14 +5,15 @@
 }
 
 body {
-    margin: 0 150px;
     font-size: 16px;
 
 }
 
 /* header section style start  */
 header {
-    margin: 38px 0 95px;
+    /* margin: 38px 0 95px; */
+    margin: 40px 150px;
+
 
 }
 
@@ -94,7 +95,8 @@ nav>ul>button>a>.fa-tiktok {
     align-items: center;
     width: 100%;
     gap: 200px;
-    margin-top: 40px;
+    /* margin-top: 40px; */
+
 }
 
 .banner-container .banner-content {
@@ -174,6 +176,10 @@ nav>ul>button>a>.fa-tiktok {
 
 
 /* main section style start  */
+main {
+    margin: 0 150px;
+
+}
 
 /* gamer section style start  */
 
@@ -296,6 +302,7 @@ nav>ul>button>a>.fa-tiktok {
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
+    margin-top: 24px;
 }
 
 /* online game section end  */
@@ -373,6 +380,7 @@ nav>ul>button>a>.fa-tiktok {
     gap: 10px;
     justify-content: center;
     align-items: center;
+    margin-bottom: 120px;
 }
 
 .rounded-card-content {
@@ -410,9 +418,93 @@ nav>ul>button>a>.fa-tiktok {
 
 /* main section style end  */
 
+/* footer section style start  */
+
+footer {
+    background: #0B0223;
+    color: #FFF;
+    text-align: center;
+    padding: 120px 450px;
+}
+
+.footer-logo-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 66px;
+}
+
+.footer-links-container {
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    /* gap: 30px; */
+    justify-content: center;
+    margin-bottom: 66px;
+    width: 100%;
+    /* padding:  ; */
+
+}
+
+.footer-links-container li {
+    list-style: none;
+}
+
+.footer-links-container li a {
+    text-decoration: none;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.footer-icons-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    align-items: center;
+    /* gap: 40px; */
+    margin-bottom: 66px;
+    /* width: 100%; */
+
+}
+
+.footer-icons-container>a>i {
+    color: white;
+    width: 40px;
+    height: 40px;
+}
+
+.our-conditions {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 66px;
+    /* gap: 60px; */
+    /* width: 100%; */
+
+}
+
+.our-conditions p,
+.copyright-text {
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* footer section style end  */
+
 /* responsive design for mobile  */
 @media screen and (max-width:576px) {
-    body {
+    header {
+        margin: 20px;
+    }
+
+    main {
         margin: 20px;
     }
 
@@ -553,11 +645,39 @@ nav>ul>button>a>.fa-tiktok {
     .rounded-card-content img {
         width: 30px;
     }
+
+    footer {
+        /* width: calc(100% - 20px); */
+        padding: 120px 5px;
+    }
+
+    .footer-links-container,
+    .footer-icons-container {
+        /* display: flex; */
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-links-container li {
+        margin-bottom: 30px;
+    }
+
+    .our-conditions {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .our-conditions p {
+        margin-bottom: 20px;
+    }
 }
 
 /* responsive design for tablet  */
 @media screen and (min-width:576px) and (max-width:768px) {
-    body {
+    header {
+        margin: 20px;
+    }
+
+    main {
         margin: 20px;
     }
 
@@ -605,5 +725,15 @@ nav>ul>button>a>.fa-tiktok {
 
     .card-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer {
+        /* width: calc(100% - 20px); */
+        padding: 120px 100px;
+    }
+
+    .footer-links-container {
+        /* display: flex; */
+        grid-template-columns: repeat(6, 1fr);
     }
 }
